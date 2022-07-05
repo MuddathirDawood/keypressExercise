@@ -8,8 +8,11 @@ const app = Vue.createApp({
         handleKeyPressed(e){
             console.log(e)
             console.log(e.key);
-            if (e.keyCode = 97) {
+            if (e.code = 'KeyA') {
                 this.show = true
+            }
+            if (e.code != 'KeyA'){
+                this.show = false
             }
         }
     }
